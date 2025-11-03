@@ -34,25 +34,15 @@
                 <a href="packages.html" class="nav-link hover:text-[#7A2828]">Packages</a>
                 <a href="about.html" class="nav-link hover:text-[#7A2828]">about us</a>
                 <a href="faqs.html" class="nav-link hover:text-[#7A2828]">FAQs</a>
-                <a href="contact.html" class="nav-link hover:text-[#7A2828]">contact</a>
+                <a href="index.html" class="nav-link hover:text-[#7A2828] text-[#7A2828] font-bold">contact</a>
             </nav>
 
             <!-- Utility Icons (Desktop & Mobile) -->
             <div class="flex items-center space-x-4 text-gray-700">
                 <!-- Social Icon -->
-                <button class="p-1 hover:text-[#7A2828]" aria-label="Instagram">
+                <a href="https://www.instagram.com/fluffiez.co/" target="_blank" class="p-1 hover:text-[#7A2828]" aria-label="Instagram">
                     <i data-lucide="instagram" class="w-5 h-5"></i>
-                </button>
-                
-                <!-- Search -->
-                <button class="p-1 hover:text-[#7A2828]" aria-label="Search">
-                    <i data-lucide="search" class="w-5 h-5"></i>
-                </button>
-
-                <!-- Cart (Keep as general utility icon) -->
-                <button class="p-1 hover:text-[#7A2828]" aria-label="Shopping Cart">
-                    <i data-lucide="shopping-bag" class="w-5 h-5"></i>
-                </button>
+                </a>
                 
                 <!-- Mobile Menu Toggle (if needed) -->
                 <button class="md:hidden p-2"><i data-lucide="menu" class="w-6 h-6"></i></button>
@@ -63,22 +53,38 @@
     <!-- Main Content Area -->
     <main id="main-content" class="flex-grow flex justify-center p-6 md:p-12">
         
-        <!-- === 1. HOME SECTION === -->
-        <section id="home" class="w-full max-w-5xl">
-            <div class="content-card p-12 text-center">
-                <h1 class="text-6xl handwritten-font font-extrabold text-[#7A2828] mb-4">The Fluffiest Party in Town!</h1>
-                <p class="text-xl max-w-4xl mx-auto mb-8">Fluffiez brings the joy of creating a cuddly best friend right to your party! We provide everything needed for a memorable, hands-on animal stuffing experience for birthdays, schools, and events.</p>
-                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                    <a href="packages.html" class="primary-btn rounded-full text-lg">
-                        See Our Packages
-                    </a>
-                    <a href="contact.html" class="primary-btn rounded-full text-lg">
-                        Book Your Date
-                    </a>
-                </div>
-                <img src="https://placehold.co/800x400/C3B394/F8F4E5?text=Party+Scene+with+Stuffed+Animals" 
-                     onerror="this.src='https://placehold.co/800x400/C3B394/F8F4E5?text=Fluffiez+Party+Banner'"
-                     class="mt-10 rounded-lg border-2 border-[#5C554F] mx-auto" alt="Placeholder image of children stuffing animals at a party">
+        <!-- === 5. CONTACT SECTION === -->
+        <section id="contact" class="w-full max-w-md">
+            <div class="content-card w-full p-8 md:p-12 rounded-lg text-center">
+                
+                <h2 class="text-4xl handwritten-font font-extrabold text-[#7A2828] mb-8">
+                    get in touch!
+                </h2>
+
+                <form class="space-y-6 text-left" onsubmit="alert('Booking inquiry sent! A Fluffiez team member will be in touch shortly to confirm your Paw-ty date.'); return false;">
+                    
+                    <!-- Name Field -->
+                    <div class="flex flex-col">
+                        <input type="text" id="contact-name" name="name" class="contact-input" placeholder="Name" required>
+                    </div>
+
+                    <!-- Email Field -->
+                    <div class="flex flex-col">
+                        <input type="email" id="contact-email" name="email" class="contact-input" placeholder="Email" required>
+                    </div>
+                    
+                    <!-- Message Field (Use for Booking Details) -->
+                    <div class="flex flex-col">
+                        <textarea id="contact-message" name="message" rows="3" class="contact-input resize-none" placeholder="Message" required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center pt-4">
+                        <button type="submit" class="primary-btn rounded-full">
+                            Let's Chat!
+                        </button>
+                    </div>
+                </form>
             </div>
         </section>
 
