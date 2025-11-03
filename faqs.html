@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluffiez - FAQs</title>
+    
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Load Lucide Icons for Navigation -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Importing the 'Gochi Hand' font for the whimsical headings and Inter for body text -->
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="whimsical-bg min-h-screen flex flex-col font-sans text-[#5C554F] texture-overlay">
+
+    <!-- Top Border Stripe -->
+    <div class="border-stripe"></div>
+
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-10 sticky top-0 z-20">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            
+            <!-- Logo - Now using the fancy font -->
+            <a href="index.html" id="logo-link" class="text-3xl font-bold handwritten-font text-[#7A2828] cursor-pointer">Fluffiez</a>
+            
+            <!-- Primary Navigation (Desktop) -->
+            <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wider font-semibold">
+                <a href="packages.html" class="nav-link hover:text-[#7A2828]">Packages</a>
+                <a href="about.html" class="nav-link hover:text-[#7A2828]">about us</a>
+                <a href="faqs.html" class="nav-link hover:text-[#7A2828] text-[#7A2828] font-bold">FAQs</a>
+                <a href="contact.html" class="nav-link hover:text-[#7A2828]">contact</a>
+            </nav>
+
+            <!-- Utility Icons (Desktop & Mobile) -->
+            <div class="flex items-center space-x-4 text-gray-700">
+                <!-- Social Icon -->
+                <button class="p-1 hover:text-[#7A2828]" aria-label="Instagram">
+                    <i data-lucide="instagram" class="w-5 h-5"></i>
+                </button>
+                
+                <!-- Search -->
+                <button class="p-1 hover:text-[#7A2828]" aria-label="Search">
+                    <i data-lucide="search" class="w-5 h-5"></i>
+                </button>
+
+                <!-- Cart (Keep as general utility icon) -->
+                <button class="p-1 hover:text-[#7A2828]" aria-label="Shopping Cart">
+                    <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+                </button>
+                
+                <!-- Mobile Menu Toggle (if needed) -->
+                <button class="md:hidden p-2"><i data-lucide="menu" class="w-6 h-6"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="main-content" class="flex-grow flex justify-center p-6 md:p-12">
+        
+        <!-- === 4. FAQs SECTION === -->
+        <section id="faqs" class="w-full max-w-3xl">
+            <div class="content-card p-8 md:p-12">
+                <h2 class="text-5xl handwritten-font text-[#7A2828] mb-8 text-center">Party Prep: Questions Answered</h2>
+                
+                <div class="space-y-6">
+                    <!-- FAQ Item 1 -->
+                    <div>
+                        <h3 class="font-bold text-lg text-[#7A2828] mb-1">Q: How much space do we need for the stuffing station?</h3>
+                        <p>A: A minimum of one large dining table or two folding tables is ideal. Our host needs room to lay out the animals, stuffing, and accessories. We can adapt to smaller spaces, but more room means more fun!</p>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div>
+                        <h3 class="font-bold text-lg text-[#7A2828] mb-1">Q: How long does a Fluffiez party take?</h3>
+                        <p>A: The core stuffing activity usually takes about **45 to 60 minutes**, depending on the number of guests. Our Deluxe and Ultimate packages include a host to ensure the pace is perfect for everyone.</p>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div>
+                        <h3 class="font-bold text-lg text-[#7A2828] mb-1">Q: Is the stuffing process safe and mess-free?</h3>
+                        <p>A: Yes! We use child-safe, hypoallergenic stuffing and seal the animals using a simple, no-sew velcro or zip closure. Our hosts bring drop cloths and manage the stuffing process to minimize any mess.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Bottom Border Stripe -->
+    <div class="border-stripe mt-auto"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

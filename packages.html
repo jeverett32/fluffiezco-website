@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluffiez - Packages</title>
+    
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Load Lucide Icons for Navigation -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Importing the 'Gochi Hand' font for the whimsical headings and Inter for body text -->
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="whimsical-bg min-h-screen flex flex-col font-sans text-[#5C554F] texture-overlay">
+
+    <!-- Top Border Stripe -->
+    <div class="border-stripe"></div>
+
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-10 sticky top-0 z-20">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            
+            <!-- Logo - Now using the fancy font -->
+            <a href="index.html" id="logo-link" class="text-3xl font-bold handwritten-font text-[#7A2828] cursor-pointer">Fluffiez</a>
+            
+            <!-- Primary Navigation (Desktop) -->
+            <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wider font-semibold">
+                <a href="packages.html" class="nav-link hover:text-[#7A2828] text-[#7A2828] font-bold">Packages</a>
+                <a href="about.html" class="nav-link hover:text-[#7A2828]">about us</a>
+                <a href="faqs.html" class="nav-link hover:text-[#7A2828]">FAQs</a>
+                <a href="contact.html" class="nav-link hover:text-[#7A2828]">contact</a>
+            </nav>
+
+            <!-- Utility Icons (Desktop & Mobile) -->
+            <div class="flex items-center space-x-4 text-gray-700">
+                <!-- Social Icon -->
+                <button class="p-1 hover:text-[#7A2828]" aria-label="Instagram">
+                    <i data-lucide="instagram" class="w-5 h-5"></i>
+                </button>
+                
+                <!-- Search -->
+                <button class="p-1 hover:text-[#7A2828]" aria-label="Search">
+                    <i data-lucide="search" class="w-5 h-5"></i>
+                </button>
+
+                <!-- Cart (Keep as general utility icon) -->
+                <button class="p-1 hover:text-[#7A2828]" aria-label="Shopping Cart">
+                    <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+                </button>
+                
+                <!-- Mobile Menu Toggle (if needed) -->
+                <button class="md:hidden p-2"><i data-lucide="menu" class="w-6 h-6"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="main-content" class="flex-grow flex justify-center p-6 md:p-12">
+        
+        <!-- === 2. PACKAGES SECTION === -->
+        <section id="packages" class="w-full max-w-6xl">
+            <div class="content-card p-8 md:p-12">
+                <h2 class="text-5xl handwritten-font text-[#7A2828] mb-10 text-center">Choose Your Paw-ty Package</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Package Card 1: Starter Snuggle -->
+                    <div class="package-card p-6 text-center rounded-xl">
+                        <h3 class="text-3xl handwritten-font text-[#B3C4CB] mb-2">Starter Snuggle</h3>
+                        <p class="text-5xl font-extrabold text-[#7A2828] mb-4">$250</p>
+                        <p class="text-sm uppercase tracking-wider mb-6">Up to 8 Guests</p>
+                        
+                        <ul class="text-left space-y-2 mb-8">
+                            <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-[#C3B394] mr-2 flex-shrink-0"></i> 8" Animal of Choice</li>
+                            <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-[#C3B394] mr-2 flex-shrink-0"></i> Fluffing Station & Stuffing</li>
+                            <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-[#C3B394] mr-2 flex-shrink-0"></i> Adoption Certificate</li>
+                            <li class="flex items-start text-gray-400"><i data-lucide="x-circle" class="w-5 h-5 text-gray-300 mr-2 flex-shrink-0"></i> Carry Box / Backpack</li>
+                            <li class="flex items-start text-gray-400"><i data-lucide="x-circle" class="w-5 h-5 text-gray-300 mr-2 flex-shrink-0"></i> Party Leader / Host</li>
+                        </ul>
+                        <a href="contact.html" class="primary-btn rounded-full">
+                            Book Starter
+                        </a>
+                    </div>
+
+                    <!-- Package Card 2: Deluxe Fluff (Recommended) -->
+                    <div class="package-card p-6 text-center rounded-xl border-4 border-[#7A2828] shadow-lg">
+                        <p class="text-xs uppercase font-bold text-white bg-[#7A2828] py-1 px-4 mb-3 inline-block rounded-full">Most Popular</p>
+                        <h3 class="text-3xl handwritten-font text-[#B3C4CB] mb-2">Deluxe Fluff</h3>
+                        <p class="text-5xl font-extrabold text-[#7A2828] mb-4">$450</p>
+                        <p class="text-sm uppercase tracking-wider mb-6">Up to 12 Guests</p>
+                        
+                        <ul class="text-left space-y-2 mb-8">
+                            <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-[#C3B394] mr-2 flex-shrink-0"></i> 10" Animal of Choice</li>
+                            <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-[#C3B394] mr-2 flex-shrink-0"></i> Fluffing Station & Stuffing</li>
+                            <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-[#C3B394] mr-2 flex-shrink-0"></i> Adoption Certificate & Hearts</li>
+                            <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-[#C3B394] mr-2 flex-shrink-0"></i> **Personalized Carry Box**</li>
+                            <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-[#C3B394] mr-2 flex-shrink-0"></i> **Dedicated Fluffiez Host**</li>
+                        </ul>
+                        <a href="contact.html" class="primary-btn rounded-full bg-[#7A2828] text-white hover:bg-[#5C554F]">
+                            Book Deluxe
+                        </a>
+                    </div>
+
+                    <!-- Package Card 3: Ultimate Paw-ty -->
+                    <div class="package-card p-6 text-center rounded-xl">
+                        <h3 class="text-3xl handwritten-font text-[#B3C4CB] mb-2">Ultimate Paw-ty</h3>
+                        <p class="text-5xl font-extrabold text-[#7A2828] mb-4">$600</p>
+                        <p class="text-sm uppercase tracking-wider mb-6">Up to 15 Guests</p>
+                        
+                        <ul class="text-left space-y-2 mb-8">
+                            <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-[#C3B394] mr-2 flex-shrink-0"></i> 12" Animal or Premium Choice</li>
+                            <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-[#C3B394] mr-2 flex-shrink-0"></i> Fluffing Station & Stuffing</li>
+                            <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-[#C3B394] mr-2 flex-shrink-0"></i> Adoption Certificate & Hearts</li>
+                            <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-[#C3B394] mr-2 flex-shrink-0"></i> Premium Fluffiez Backpacks</li>
+                            <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-[#C3B394] mr-2 flex-shrink-0"></i> **Host + Costume Accessories!**</li>
+                        </ul>
+                        <a href="contact.html" class="primary-btn rounded-full">
+                            Book Ultimate
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Bottom Border Stripe -->
+    <div class="border-stripe mt-auto"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

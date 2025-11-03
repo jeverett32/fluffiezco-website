@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluffiez - About Us</title>
+    
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Load Lucide Icons for Navigation -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Importing the 'Gochi Hand' font for the whimsical headings and Inter for body text -->
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="whimsical-bg min-h-screen flex flex-col font-sans text-[#5C554F] texture-overlay">
+
+    <!-- Top Border Stripe -->
+    <div class="border-stripe"></div>
+
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-10 sticky top-0 z-20">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            
+            <!-- Logo - Now using the fancy font -->
+            <a href="index.html" id="logo-link" class="text-3xl font-bold handwritten-font text-[#7A2828] cursor-pointer">Fluffiez</a>
+            
+            <!-- Primary Navigation (Desktop) -->
+            <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wider font-semibold">
+                <a href="packages.html" class="nav-link hover:text-[#7A2828]">Packages</a>
+                <a href="about.html" class="nav-link hover:text-[#7A2828] text-[#7A2828] font-bold">about us</a>
+                <a href="faqs.html" class="nav-link hover:text-[#7A2828]">FAQs</a>
+                <a href="contact.html" class="nav-link hover:text-[#7A2828]">contact</a>
+            </nav>
+
+            <!-- Utility Icons (Desktop & Mobile) -->
+            <div class="flex items-center space-x-4 text-gray-700">
+                <!-- Social Icon -->
+                <button class="p-1 hover:text-[#7A2828]" aria-label="Instagram">
+                    <i data-lucide="instagram" class="w-5 h-5"></i>
+                </button>
+                
+                <!-- Search -->
+                <button class="p-1 hover:text-[#7A2828]" aria-label="Search">
+                    <i data-lucide="search" class="w-5 h-5"></i>
+                </button>
+
+                <!-- Cart (Keep as general utility icon) -->
+                <button class="p-1 hover:text-[#7A2828]" aria-label="Shopping Cart">
+                    <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+                </button>
+                
+                <!-- Mobile Menu Toggle (if needed) -->
+                <button class="md:hidden p-2"><i data-lucide="menu" class="w-6 h-6"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="main-content" class="flex-grow flex justify-center p-6 md:p-12">
+        
+        <!-- === 3. ABOUT US SECTION === -->
+        <section id="about" class="w-full max-w-3xl">
+            <div class="content-card p-8 md:p-12">
+                <h2 class="text-5xl handwritten-font text-[#7A2828] mb-8 text-center">The Stuffing Story</h2>
+                
+                <p class="text-lg mb-6">Fluffiez was born from a desire to bring creativity and connection to kids' parties. We noticed how much joy children found in **making** something, not just receiving it. We decided to ditch the standard party favors and create an interactive experience where every guest leaves with a unique, handmade friend and a happy memory.</p>
+                
+                <p class="text-lg mb-6">Our mission is simple: to provide high-quality, safe stuffing materials and a friendly, energetic host who guides the children through the adoption and creation process. We handle the mess and bring the magic, so you can enjoy the celebration!</p>
+
+                <div class="text-center mt-8">
+                    <a href="packages.html" class="primary-btn rounded-full">
+                        View Our Party Options
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Bottom Border Stripe -->
+    <div class="border-stripe mt-auto"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
