@@ -58,6 +58,21 @@
     transition: border-bottom-color 0.2s;
     color: #5C554F; 
 }
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+}
+
+#mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 .contact-input::placeholder {
     color: #5C554F; /* Dark color for placeholder text */
     opacity: 1; 
